@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Page</title>
+    <style>
+        body{
+            background: #901901;
+        }
+        center{
+            margin-top: 500px;
+        }
+        span{
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let span_1=document.createElement('span')
+        console.log(span_1);
+        span_1.innerText="First";
+        span_1.style.color="black";
+        span_1.style.backgroundColor="white"
+
+        let span_2=document.createElement('span')
+        console.log(span_2);
+        span_2.innerText="Page";
+        span_2.style.color="white";
+        span_2.style.backgroundColor="black"
+
+        let h1Tag=document.createElement('h1');
+        console.log(h1Tag);
+
+        h1Tag.appendChild(span_1);
+        h1Tag.appendChild(span_2);
+
+        let centerT=document.createElement('center');
+        centerT.appendChild(h1Tag);
+
+        document.body.appendChild(centerT);
+    </script>
+</body>
+</html>
